@@ -10,3 +10,6 @@ let avg= sum/num.length;
 console.log("Average= ",avg);
 
 console.log("Question 2: ");
+let arr= [1,3,4,-2,-4];
+console.log("Number is: ",)
+console.log(arr.map((no) => no + 5));
