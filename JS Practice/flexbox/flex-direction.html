@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>flex-direction</title>
+        <style>
+            .gfg_flex {
+                display: flex;
+                flex-direction: row;
+                background-color: green;
+                text-align:center;
+            }
+            
+            .gfg_flex > div {
+                background-color: #f4f4f4;
+                width: 100px;
+                height:100px;
+                margin: 10px;
+                font-size: 40px;
+            }
+            h2 {
+                text-align:center;
+            }
+            .geeks {
+                font-size:40px;
+                text-align:center;
+                color:#009900;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <pre><h3>
+            Flex-direction: The flex-direction is used to define the direction of flexible item. 
+            The default axis is horizontal in flexbox, so the items flow into a row. 
+
+            Syntax:
+            // Stacking flex items column wise
+            flex-direction: column;
+
+            // Stacking flex items from bottom to top
+            flex-direction: column-reverse;
+
+            // Stacking flex items row wise
+            flex-direction: row;
+
+            // Stacking flex items from right to left
+            flex-direction: row-reverse; 
+        </h3>
+        </pre>
+
+        <div class = "geeks">GeeksforGeeks</div>
+        <h2>flex-direction Property</h2>
+        <div class="gfg_flex">
+            <div>Box A</div>
+            <div>Box B</div>
+            <div>Box C</div> 
+            <div>Box D</div>
+            <div>Box E</div> 
+        </div>
+    </body>
+</html>
