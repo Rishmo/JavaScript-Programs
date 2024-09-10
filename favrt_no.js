@@ -1,4 +1,4 @@
-const favrt_No= 8;
+const favrt_No= 3;
 let guess= prompt("Guess my Favourite Number :)");
 
 while( ( guess !=favrt_No) && (guess != "quit"))
