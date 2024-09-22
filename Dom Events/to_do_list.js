@@ -17,12 +17,23 @@ btn.addEventListener("click", function(){
     inp.value=""; // Reset to Empty 
 });
 
-let delBtns = document.querySelectorAll(".delete"); // not applied for new element only existing ele will be deleted
-for(delBtn of delBtns) {
-    delBtn.addEventListener("click", function(){
-        let par = this.parentElement;
-        console.log(par);
-        par.remove();
-        console.log("Element deleted");
-    });
-}
+ul.addEventListener("click", function(event){
+    if(event.target.nodeName == "BUTTON"){
+        let listItem = event.target.parentElement; // for deleting ele. we should trigger it's parent ele.
+        listItem.remove(); // for removing Element
+        console.log("Item Deleted");
+        // console.log("Delete");
+    }
+    // else
+    //     console.log("Don not Delete");
+})
+
+// let delBtns = document.querySelectorAll(".delete"); // not applied for new element only existing ele will be deleted
+// for(delBtn of delBtns) {
+//     delBtn.addEventListener("click", function(){
+//         let par = this.parentElement;
+//         console.log(par);
+//         par.remove();
+//         console.log("Element deleted");
+//     });
+// }
