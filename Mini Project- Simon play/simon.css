@@ -31,3 +31,11 @@ body{
 .green{
     background-color: green;
 }
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: rgb(240, 15, 71);
+}
