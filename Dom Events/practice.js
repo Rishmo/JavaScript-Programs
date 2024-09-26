@@ -4,7 +4,7 @@
 // - Scroll
 // - load
 
-let inp =  document.querySelector("input");
+let input =  document.querySelector("input");
 
 inp.addEventListener("mouseout", function(event){ // keypress, scroll, load events
 
