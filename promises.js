@@ -15,23 +15,37 @@ function savetoDB(data){
 
 // Promise Chaining concept
 
-savetoDB("Moon")
-    .then(() => {
-        console.log("Promise1 resolved");
-        saveToDBPromise("Hello World");
-    })
-    .then(() => {
-        console.log("Promise2 resolved");
-        saveToDBPromise("Hello World 2");
-    })
-    .catch(() => {
-        console.log("Some Promises Rejected");
-    });
+// savetoDB("Moon")
+//     .then(() => {
+//         console.log("Promise1 resolved");
+//         return saveToDBPromise("Hello World");
+//     })
+//     .then(() => {
+//         console.log("Promise2 resolved");
+//         return saveToDBPromise("Hello World 2");
+//     })
+//     .catch(() => {
+//         console.log("Some Promises Rejected");
+//     });
 
 
 // Promises are rejected and resolved with some data( valid results or errors)
 
-
+savetoDB("Moon")
+    .then((result) => {
+        console.log("result : ", result);
+        console.log("Promise1 resolved");
+        saveToDBPromise("Hello World");
+    })
+    .then((result) => {
+        console.log("result : ", result);
+        console.log("Promise2 resolved");
+        saveToDBPromise("Hello World 2");
+    })
+    .catch((error) => {
+        console.log("error : ", error);
+        console.log("Some Promises Rejected");
+    });
 
 
 
